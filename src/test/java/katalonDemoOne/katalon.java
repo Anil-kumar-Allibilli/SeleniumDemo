@@ -50,5 +50,6 @@ public class katalon {
 		driver.findElement(By.xpath("//*[@id=\"summary\"]/div/div/div[7]/p/a")).click();
 		System.out.println("back to home page");
 		driver.close();
+		//testing push
 	}
 }
