@@ -9,11 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 //import org.junit.Assert;
 //import org.testng.Assert;
-public class katalon {
+public class Katalon {
 	
 	WebDriver driver;
 	
-	public katalon(WebDriver driver2) {
+	public Katalon(WebDriver driver2) {
 		this.driver = driver2;
 	}
 	public void click(By locator)
@@ -92,7 +92,7 @@ public class katalon {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(1));
 		driver.get("https://katalon-demo-cura.herokuapp.com/#appointment");
-		katalon object = new katalon(driver);
+		Katalon object = new Katalon(driver);
 		object.isvisible("//a[@id='btn-make-appointment']");
 		object.click(By.xpath("//a[@id='btn-make-appointment']"));
 		object.isvisible("//h2[normalize-space()='Login']");
